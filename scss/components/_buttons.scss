@@ -1,0 +1,25 @@
+@use '../utilities' as *;
+
+.change__btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $primaryBtn;
+    position: relative;
+    @include typography(0.8125rem, 700);
+
+    &::after{
+        content: '';
+        width: 0%;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        position: absolute;
+        background: $primaryBtn;
+        transition: all 0.2s;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
+}

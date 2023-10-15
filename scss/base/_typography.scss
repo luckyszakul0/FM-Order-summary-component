@@ -1,0 +1,22 @@
+@use '../utilities' as *;
+
+.heading{
+    color: $primaryText;
+    
+    &__primary{
+        @include typography(1.375rem, 900);
+    }
+    &__secondary{
+        @include typography(0.875rem, 900);
+    }
+}
+
+.body__text{
+    color: $secondaryText;
+    @include typography(0.9375rem, 500, 1.5625rem);
+}
+
+.pricetag{
+    color: $secondaryText;
+    @include typography(0.875rem, 500);
+}

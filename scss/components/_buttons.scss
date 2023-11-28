@@ -1,4 +1,5 @@
 @use '../utilities' as *;
+@use 'sass:color';
 
 .change__btn{
     cursor: pointer;
@@ -19,7 +20,44 @@
         transition: all 0.2s;
     }
 
+    &:hover{
+        color: color.scale($primaryBtn, $lightness: 20%);
+    }
+
     &:hover::after{
         width: 100%;
+        background: color.scale($primaryBtn, $lightness: 20%);
+    }
+}
+
+.btn{
+    width: 100%;
+    @include typography(0.9375rem, 900);
+    letter-spacing: 0.025rem;
+    padding: 1.25rem 0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &__primary{
+        @extend .btn;
+        background: $primaryBtn;
+        color: #fff;
+        border-radius: 0.85rem;
+        box-shadow: 0 20px 30px color.scale($secondaryText, $alpha: -50%);
+
+        &:hover{
+            background: color.scale($primaryBtn, $lightness: 20%);
+        }
+    }
+
+    &__secondary{
+        @extend .btn;
+        background: none;
+        color: $secondaryText;
+
+        &:hover{
+            color: $primaryText;
+        }
     }
 }

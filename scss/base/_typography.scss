@@ -4,9 +4,11 @@
     color: $primaryText;
     
     &__primary{
+        @extend .heading;
         @include typography(1.375rem, 900);
     }
     &__secondary{
+        @extend .heading;
         @include typography(0.875rem, 900);
     }
 }

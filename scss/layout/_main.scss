@@ -5,4 +5,27 @@
     width: 85%;
     height: 85%;
     border-radius: 1rem;
+    overflow: hidden;
+
+    &__info{
+        height: 75%;
+        padding: 1.25rem;
+        text-align: center;
+        @include flex(space-between, center, column, 2rem);
+
+        .selected__item{
+            @include flex(center, center, row, 1.5rem);
+            background: $secondaryBg;
+            padding: 1rem;
+            border-radius: 0.5rem;
+
+            .item__info{
+                margin-right: 1.5rem;
+
+                h2{
+                    width: 110%;
+                }
+            }
+        }
+    }
 }

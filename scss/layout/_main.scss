@@ -6,15 +6,28 @@
     height: 85%;
     border-radius: 1rem;
     overflow: hidden;
+    max-width: 450px;
+    max-height: 660px;
 
     &__info{
         height: 75%;
         padding: 1.25rem;
         text-align: center;
-        @include flex(space-between, center, column, 2rem);
+        @include flex(space-between, center, column, 0.5rem);
+        @media only screen and (min-width: 450px) {
+            justify-content: flex-start;
+            gap: 2.5rem;
+        }
 
         .selected__item{
-            @include flex(center, center, row, 1.5rem);
+            @include flex(center, center, row, 0.75rem);
+            @media only screen and (min-width: 400px) {
+                gap: 1.25rem;
+                width: 80%;
+            }
+            @media only screen and (min-width: 600px) {
+                gap: 3rem;
+            }
             background: $secondaryBg;
             padding: 1rem;
             border-radius: 0.5rem;
@@ -27,5 +40,13 @@
                 }
             }
         }
+
+        p.body__text{
+            width: 70%;
+        }
+    }
+
+    .buttons{
+        width: 100%;
     }
 }

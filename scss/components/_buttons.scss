@@ -43,6 +43,7 @@
         @extend .btn;
         background: $primaryBtn;
         color: #fff;
+        width: 90%;
         border-radius: 0.85rem;
         box-shadow: 0 20px 30px color.scale($secondaryText, $alpha: -50%);
 

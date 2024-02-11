@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/mobilefirst-order-summary-using-scss-UpvT-LvgBR)
+- Live Site URL: [Github Pages](https://luckyszakul0.github.io/FM-Order-summary-component/)
 
 ## My process
 
